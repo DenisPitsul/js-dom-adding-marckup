@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+    <script defer src="./assets/js/loader.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button disabled class="navBtn"><<</button>
+      <button disabled class="navBtn"><</button>
+      <button class="navBtn">></button>
+      <label class="perPageLabel" for="per-page">Users per page</label>
+      <select name="per-page" id="per-page">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+      </select>
+      <ol class="selectedUsers"></ol>
+    </div>
+    <div class="container userCards">
+      <p class="error-message invisible"></p>
+    </div>
+    <div class="loader-backdrop invisible">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html>
